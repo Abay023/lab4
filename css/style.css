@@ -13,7 +13,6 @@ body {
 }
 
 /* typography */
-
 h1 {
   font-size: 32px;
   font-weight: 700;
@@ -52,6 +51,7 @@ p {
 
 .nav-links a {
   margin-left: 16px;
+  font-size: 14px;
   text-decoration: none;
   color: #0284C7;
 }
@@ -113,10 +113,11 @@ p {
 
 /* footer links */
 .footer-links {
-  color: #0284C7;          /* same blue as nav links */
+  color: #0284C7;
+  margin-bottom: 16px;        
   font-size: 14px;
   display: flex;
-  gap: 12px;               /* spacing between items */
+  gap: 12px;  /* spacing between items */
 }
 
 .footer-links a {
@@ -142,4 +143,17 @@ p {
   body {
     padding: 40px;
   }
+}
+
+/* hover effects for navi*/
+a:hover {
+  color: #012c43;        /* darker blue */
+  text-decoration: underline;
+  transition: 0.2s ease;
+}
+/* hover effect for Join Class button */
+.card button:hover {
+  text-decoration: underline;  /* underline text */
+  background: #012c43;         /* optional: soft blue highlight */
+  transition: 0.2s ease;
 }
